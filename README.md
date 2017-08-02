@@ -53,6 +53,16 @@ gabriel.gbaをゲームボーイアドバンス用エミュレータで起動し
     arm-none-eabi-gcc -specs=gba_mb.specs -o build/gabriel.elf build/bg.o build/chr.o build/enemy.o build/game.o build/item.o build/main.o build/player.o build/screen.o build/sprite.o
     arm-none-eabi-objcopy -O binary build/gabriel.elf gabriel.gba
 
+## ライセンス (ソースコード部分のみ)
+
+    Copyright (c) 2017 Hayato Kohara
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 ## 説明・操作方法
 
 以下の4つの画面から構成されています。  
@@ -103,7 +113,7 @@ OVER画面でスタートボタンを押すと、TITLE画面に遷移します�
 
 ## おわりに
 
-うちの大学の指導教員の先生、金沢大学 様、GBA develop Wiki 様、各開発ツールの作者様 などGBA開発において多くの知見をいただきました。  
+大学の指導教員の先生・TAの方々、[金沢大学](http://jaco.ec.t.kanazawa-u.ac.jp/edu/GBA/index.html) 様、[GBA develop Wiki](http://akkera102.sakura.ne.jp/gbadev/) 様、各開発ツールの作者様 などGBA開発において多くの知見をいただきました。  
 この場を借りて感謝させていただきます。:)  
 
 原作者のうかみ先生、ガヴドロファンの方々、レトロゲーマーの方々に捧げます。  

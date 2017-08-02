@@ -109,17 +109,14 @@ void sprite_init(hword* obj_palette)
     int i;
     volatile hword* pal = (hword*) OBJ_PALETTE;
 
-    // Initialize OBJ palettes
-
+    // OBJパレットの初期化
     for (i = 0; i < LCD_PAL_COLORS; i++)
         *pal++ = obj_palette[ i ];
 
-    // Initialize sprites
-
+    // スプライトの初期化
     for (i = 0; i < OBJ_MAX_SPRITES; i++)
         sprite_setup(i, OBJ_8x8, PRIORITY_1, 0);
 
-    // Turn on OBJ screen!
-
+    // OBJの有効化
     gba_register(LCD_CTRL) |= LCD_OBJEN + LCD_OBJMAP1D;
 }
